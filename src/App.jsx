@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import VideoInput from './components/VideoInput';
 import SummaryDisplay from './components/SummaryDisplay';
 import LandingPage from './components/LandingPage';
+import ClipInsight from './components/ClipInsight';
 
 const App = () => {
     const [summary, setSummary] = useState('');
@@ -32,16 +33,7 @@ const App = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                <Route
-                    path="/app"
-                    element={
-                        <div className="container mx-auto p-4 min-h-screen flex flex-col items-center justify-center bg-gray-100">
-                            <h1 className="text-4xl font-bold text-center mb-6 text-blue-600">ClipInsight</h1>
-                            <VideoInput onFetchSummary={fetchSummary} />
-                            {summary && <SummaryDisplay summary={summary} />}
-                        </div>
-                    }
-                />
+                <Route path="/app" element={<ClipInsight />} />
             </Routes>
         </Router>
     );
