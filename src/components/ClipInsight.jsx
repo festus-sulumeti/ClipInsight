@@ -32,8 +32,8 @@ const ClipInsight = () => {
     return (
         <div className="flex min-h-screen">
             <Sidebar history={history} />
-            <div className="flex-1 p-4 bg-gray-100">
-                <h1 className="text-4xl font-bold text-center mb-6 text-blue-600">ClipInsight</h1>
+            <div className="flex-1 p-8 bg-gray-100">
+                <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">ClipInsight</h1>
                 <VideoInput onFetchSummary={fetchSummary} />
                 {summary && <SummaryDisplay summary={summary} />}
             </div>
