@@ -12,17 +12,17 @@ const VideoInput = ({ onFetchSummary }) => {
     };
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-full max-w-md p-4">
             <input
                 type="text"
                 value={videoId}
                 onChange={(e) => setVideoId(e.target.value)}
                 placeholder="Enter YouTube Video ID"
-                className="p-2 border border-gray-300 rounded mb-4 w-full max-w-md"
+                className="p-2 border border-gray-300 rounded mb-4 w-full"
             />
             <button
                 onClick={handleFetchSummary}
-                className="bg-blue-500 text-white p-2 rounded w-full max-w-md hover:bg-blue-600 transition"
+                className="bg-blue-500 text-white p-2 rounded w-full hover:bg-blue-600 transition"
             >
                 Get Summary
             </button>
