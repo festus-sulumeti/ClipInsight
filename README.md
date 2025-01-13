@@ -19,6 +19,11 @@ ClipInsight is a web application that provides concise summaries of YouTube vide
 
 ```sh
 git clone https://github.com/festus-sulumeti/ClipInsight.git
+
+```
+
+```sh
+
 cd ClipInsight
 ```
 
