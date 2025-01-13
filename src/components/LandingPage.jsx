@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const LandingPage = () => {
+    const navigate = useNavigate();
+
+    const handleGetStarted = () => {
+        navigate('/app');
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white">
             <motion.h1
@@ -24,7 +31,7 @@ const LandingPage = () => {
                 className="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+                onClick={handleGetStarted}
             >
                 Get Started
             </motion.button>
