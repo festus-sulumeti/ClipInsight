@@ -20,21 +20,19 @@ const Sidebar = () => {
             </button>
             <div className="flex space-x-4">
               <div className="flex items-center space-x-3">
-                
                 <a
                   href="#"
                   className="text-sm block px-2 py-1 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
                 >
-                 <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
+                  <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-               
                 <a
                   href="#"
                   className="text-sm block px-2 py-1 rounded-lg bg-gray-800 hover:bg-gray-700 transition"
                 >
-                     <PlusIcon className="h-6 w-6 text-gray-400" />
+                  <PlusIcon className="h-6 w-6 text-gray-400" />
                 </a>
               </div>
             </div>
